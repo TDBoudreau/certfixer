@@ -1,4 +1,4 @@
-module certfixer
+module github.com/TDBoudreau/certfixer
 
 go 1.26.1
 
