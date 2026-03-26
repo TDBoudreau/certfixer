@@ -337,7 +337,7 @@ func (m model) viewAnalysis() string {
 	if sideBySide {
 		panelW := (innerW - panelGap) / 2
 		left := certPanel("Current Order", "", m.original, false, false, panelW)
-		right := certPanel("Fixed Order", warnBadge, m.sorted, true, rootFirst, panelW)
+		right := certPanel("Fixed Order", warnBadge, fixedCerts, true, rootFirst, panelW)
 		chainBlock = lipgloss.JoinHorizontal(lipgloss.Top,
 			left,
 			strings.Repeat(" ", panelGap),
