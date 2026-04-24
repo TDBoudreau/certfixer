@@ -113,6 +113,7 @@ func newModel() model {
 	fp := filepicker.New()
 	fp.AllowedTypes = []string{".pem", ".cer", ".crt", ".cert", ".p7b"}
 	fp.ShowPermissions = false
+	fp.AutoHeight = false
 	fp.CurrentDirectory, _ = os.Getwd()
 	return model{fp: fp, help: help.New()}
 }
